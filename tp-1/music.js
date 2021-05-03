@@ -1,10 +1,7 @@
-const mainSound = document.getElementById('mainZelda');
-mainSound.muted = false;
-mainSound.pause();
-mainSound.currentTime = 0;
-mainSound.play();
 
-
-     
-               
-                
+   
+    const mainSound = document.getElementById('mainZelda');
+    mainSound.volume = 0.2;
+    mainSound.play();
+   
+   

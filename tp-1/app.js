@@ -1,5 +1,5 @@
 
-const canvas = document.getElementById("canvas");
+
 const buttons = document.querySelectorAll("button");
 
 var enemyHP = 1000;
@@ -11,6 +11,7 @@ var playerMana = 200 ;
 var playerFinal = 0 ;
 var updateButtonsCount= 1;
 var noteSound;
+
 var tutorialCount=0;
 
 start();
@@ -101,6 +102,7 @@ function player(event){ //logica jugador
 
                 noteSound.pause();
                 noteSound.currentTime = 0;
+                noteSound.volume = 0.2;
                 noteSound.play();
                 
                 setTimeout(function(){
@@ -118,6 +120,7 @@ function player(event){ //logica jugador
 
             noteSound.pause();
             noteSound.currentTime = 0;
+            noteSound.volume = 0.2;
             noteSound.play();
                 setTimeout(function(){
                     UnShowPicture(document.getElementById("attackZelda"));
@@ -140,6 +143,7 @@ function player(event){ //logica jugador
                  
                  noteSound.pause();
                  noteSound.currentTime = 0;
+                 noteSound.volume = 0.2;
                  noteSound.play();
                 
                 setTimeout(function(){
@@ -165,6 +169,7 @@ function player(event){ //logica jugador
 
             noteSound.pause();
             noteSound.currentTime = 0;
+            noteSound.volume = 0.2;
             noteSound.play();
                 
                 setTimeout(function(){
@@ -176,7 +181,7 @@ function player(event){ //logica jugador
     }
    
     if(enemyHP<=0){
-        alert("Ganaste ganondorf perdio");
+        alert("you win ganondorf lose");
            reset();
    }else{
     
@@ -208,6 +213,7 @@ function enemy(){
 
         noteSound.pause();
         noteSound.currentTime = 0;
+        noteSound.volume = 0.2;
         noteSound.play();
                 
                 setTimeout(function(){
@@ -227,6 +233,7 @@ function enemy(){
 
             noteSound.pause();
             noteSound.currentTime = 0;
+            noteSound.volume = 0.2;
             noteSound.play();
                 
                 setTimeout(function(){
@@ -249,6 +256,7 @@ function enemy(){
 
             noteSound.pause();
             noteSound.currentTime = 0;
+            noteSound.volume = 0.2;
             noteSound.play();
                 
                 setTimeout(function(){
@@ -265,6 +273,7 @@ function enemy(){
 
                 noteSound.pause();
                 noteSound.currentTime = 0;
+                noteSound.volume = 0.2;
                 noteSound.play();
                 
                 setTimeout(function(){
@@ -277,7 +286,7 @@ function enemy(){
     }
       
     if(playerHP<=0){
-        alert("perdiste ganondorf gano");
+        alert("you lose ganondorf win");
         reset();
     }else{ 
         setTimeout(function(){
